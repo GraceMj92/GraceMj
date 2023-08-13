@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Source+Sans+Pro:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="img/Logo.png" sizes="any">
+    <link rel="icon" type="image/x-icon" href="img/Logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Mon Blog</title>
+    <style>
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .logo {
+            float: left;
+            padding: 10px;
+            margin-top: 15px;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .logo a:hover {
+            color: #e8491d;
+        }
+
+        nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav li {
+            display: inline;
+            margin-left: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #333;
+        }
+
+        nav a:hover {
+            color: #e8491d;
+        }
+
+        .social {
+            float: right;
+            margin-top: 5px;
+        }
+
+        .social a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #333;
+            font-size: 1.5rem;
+        }
+
+        .social a:hover {
+            color: #e8491d;
+        }
+
+        .banner {
+            height: 500px;
+            background-image: url('img/banner.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: #fff;
+            padding: 100px 0;
+        }
+
+        .banner h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .banner p {
+            font-size: 1.5rem;
+        }
+
+        .featured {
+            margin-top: 100px;
+        }
+
+        .article {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .article img {
+            float: left;
+            width: 300px;
+            height: auto;
+        }
+
+        .article-content {
+            padding: 20px;
+        }
+
+        .article-title {
+            font-size: 1.8rem;
+            margin: 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .article-date {
+            color: #888;
+        }
+
+        .article-text {
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #e8491d;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Mon Blog</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="article.html">Articles</a></li>
+                    <li><a href="#">À Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@tsarouge" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="banner">
+        <h1>Bienvenue sur Mon Blog</h1>
+        <p>Découvrez les dernières actualités, astuces et bien plus encore.</p>
+    </div>
+
+    <div class="container">
+        <div class="featured">
+            <div class="article">
+                <img src="img/article1.jpg" alt="Article 1">
+                <div class="article-content">
+                    <h2 class="article-title">Titre de l'article 1</h2>
+                    <p class="article-date">Publié le 12 août 2023</p>
+                    <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum, turpis ac accumsan sollicitudin, elit libero dictum ex, nec consequat quam sem non odio.</p>
+                </div>
+            </div>
+
+            <div class="article">
+                <img src="img/article2.jpg" alt="Article 2">
+                <div class="article-content">
+                    <h2 class="article-title">Titre de l'article 2</h2>
+                    <p class="article-date">Publié le 10 août 2023</p>
+                    <p class="article-text">Vivamus ultrices ante nec nulla cursus, id euismod mauris facilisis. Proin ac enim arcu. Nullam nec justo eget odio fermentum convallis eget eu justo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Mon Blog. Tous droits réservés. | Designed by [Votre Nom]</p>
+    </footer>
+</body>
+</html>

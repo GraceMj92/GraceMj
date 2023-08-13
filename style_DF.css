@@ -1,0 +1,348 @@
+/* @font-face {
+    font-family: "Montserrat";
+    src: url('fonts/Montserrat-Regular.otf'), format("opentype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url('fonts/Montserrat-Bold.otf'), format("opentype");
+    font-weight: 700;
+} */
+/* @font-face {
+    font-family: "Cardo";
+    src: url('fonts/Cardo-Bold.ttf'), format("ttf");
+    font-weight: 700;
+} 
+@font-face {
+    font-family: "SourceSansPro";
+    src: url('fonts/SourceSansPro-Regular.ttf'), format("ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "SourceSansPro";
+    src: url('fonts/SourceSansPro-Bold.ttf'), format("ttf");
+    font-weight: 700;
+} */
+*{
+    box-sizing: border-box;
+}
+body,html
+{
+    font-size: 16px;
+    font-family:'Source Sans Pro', sans-serif;
+    color: rgba(0, 0, 0, 0.87);
+    line-height: 1.6;
+    margin: 0;
+    /* font-weight: 500px; */
+    background: #fbfbfb;
+}
+p
+{
+    text-align: justify;
+}
+.topbar
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    z-index: 10;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
+.topbar nav
+{
+    float: left;
+    z-index: inherit;
+}
+.menu-item a 
+{
+    color: #9f9f9f;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 53px;
+    transition: color .5s;
+}
+.menu-item a:hover,.menu-item a.active
+{
+    color: #000;
+}
+
+.social
+{
+    float: right;
+}
+.social a
+{
+    padding: 0 12px ;
+    opacity: 50%;
+    transition: opacity .3s;
+}
+.social a:hover
+{
+    opacity: 1;
+}
+.banner
+{
+    height: 427px;
+    background-color: #6160604c;
+}
+.main
+{
+    float: left;
+    width: calc(100% - 375px);
+    box-shadow:0 4px 20px rgba(0, 0, 0, 0.5);
+    position:relative;
+    background: #ffffff;
+    z-index: 2;
+}
+.sidebar
+{
+    float: right;
+    width: 375px;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+}
+.sidebar-title
+{
+    font-size: 30px;
+    color: #000;
+    margin: 20px 0;
+}
+.sidebar-title:first-child
+{
+    margin-top: 0;
+}
+.sidebar a
+{
+    color: #9f9f9f;
+    text-decoration: none;
+}
+.sidebar a:hover
+{
+    color: #616060;
+    text-decoration: none;
+}
+li
+{
+    padding:6px 0;
+}
+li:first-child
+{
+    padding-top: 0;
+}
+li:last-child
+{
+    padding-bottom: 0;
+}
+.sidebar ul
+{
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+.sidebar hr
+{
+    border: none;
+    background: #9f9f9f;
+    height: 1px;
+    margin: 50px 0;
+}
+.content
+{    
+    display: flex;
+}
+.container
+{
+    max-width: 940px;
+    margin: 0 auto;
+}
+.article
+{
+    position:relative;
+    margin: 50px 0;
+    padding-left: 225px;
+    min-height: 320px;
+    /* perspective: 1500px; */
+}
+.article a
+{
+    color: inherit;
+    text-decoration: none;
+}
+.article a:hover
+{
+    color: #3d5189;
+}
+.article-img
+{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 200px;
+    height: 320px;
+    margin-right: 25px;
+    background-color: #61606051;
+    border-radius: 15px;
+}
+.article-img img
+{
+    position: inherit;
+    left: 10px;
+    top: 10px;
+    width: auto;
+    transition: transform .9s 0.3s;
+    animation: slideDown 5s backwards;
+    opacity: 0.5;
+}
+.article-img img:hover
+{
+    transform: rotate(-45deg);
+}
+.article-date
+{
+   font-weight: 300px;
+   color: rgba(0, 0, 0, 0.6);
+   margin-bottom:5px;
+}
+.article-title
+{
+    font-size: 2.25rem;
+    line-height: 1.1;
+    font-family: 'Cardo', serif;
+    margin-bottom: 16px;
+}
+.content
+{
+    display: flex;
+}
+.container-img
+{
+    width: 926px;
+}
+.footer
+{
+    clear: both;
+    margin: 20px auto;
+}
+ /* .sidebar li::before
+ {
+    content: '- ';
+ }
+.sidebar li::after
+{
+    content: '.';
+} */
+.article-title::after
+{
+    content: '';
+    display: block;
+    width: 100px;
+    height:4px;
+    background: #000000;
+}
+blockquote
+{
+    background: #61606040;
+    padding: 10px;
+    border-radius: 15px;
+    position: relative;
+    color: #434242;
+}
+blockquote::before
+{
+    content: '“';
+    font-size: 60px;
+    line-height: 1.4rem;
+    position:absolute;
+    top: 3px;
+    left: 0;
+}
+blockquote::after
+{
+    content: '”';
+    font-size: 60px;
+    line-height: 1.4rem;
+    position:absolute;
+    right: 0;
+    bottom: -20px;
+}
+blockquote span
+{
+    font-style: italic;
+}
+/* Une autre manière de compter 
+des paragraphes, sinon de numéroter
+ des paragraphes, on peut utliser:
+  "counter" */
+.sidebar ul
+{
+    counter-reset: sidebarliste;
+}
+.sidebar li::before
+{
+    counter-increment: sidebarliste;
+    content: counter(sidebarliste) ". ";
+}
+.sidebar li a::after
+{
+    content: attr(data-count);
+    float: right;
+    background-color: #61606043;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 50%;
+}
+@keyframes slideDown
+{
+    0%
+    {
+        transform: translateY(135px);
+        opacity: 0.5;
+    }
+    50%
+    {
+        transform: translateY(68px);
+        opacity: 1;
+    }
+    100%
+    {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+}
+@media screen and (max-width: 1100px)
+ {
+    .content
+    { 
+        display: block;
+    }
+    .main
+    {
+        padding: 0 30px;
+        width: 100%;
+    }
+    .sidebar
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width:740px)
+{
+    .content
+    {
+        margin: 0 auto;
+    }
+    .article
+    {
+        padding-left: 0;
+    }
+    .article-img
+    {
+        position: static;
+    }
+}
